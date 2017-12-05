@@ -37,7 +37,6 @@ void gameMain()
   text(highScore, 344, 45);
   text("Lifes", 15, 20);
   text(lifes, 30, 45);
-  offSet();
   paddle.main();
   randomness();
   ball.main();
