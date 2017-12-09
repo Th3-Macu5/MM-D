@@ -1,6 +1,7 @@
 class Ball
 {
-
+  int lifes;
+  float enemyChance;
   float x = 225;
   float y = 225;
   float xSpeed = 4;
@@ -10,7 +11,7 @@ class Ball
   {
     if (lifes == -1) 
     {
-      if (score >= highScore) 
+      if (score >= highScore);
       {
         highScore = score;
       }
@@ -27,14 +28,14 @@ class Ball
   void move() 
   {
     x = x + xSpeed;
-    y = y + randomness;
+    y = y + paddle.randomness;
   }
 
   void bounce() 
   {
     if (x >= 500) 
     {
-      score = score + 1;
+     score = score + 1;
       x = 70;
       y = 250;
       delay(3000);
@@ -53,11 +54,11 @@ class Ball
   {
     if (y >= 500) 
     {
-      randomness = randomness*-1;
+      paddle.randomness = paddle.randomness*-1;
     }
     if (y <= 1) 
     {
-      randomness = randomness*-1;
+      paddle.randomness = paddle.randomness*-1;
     }
   }
 }

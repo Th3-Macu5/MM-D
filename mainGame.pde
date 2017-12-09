@@ -2,6 +2,8 @@ Paddle paddle;
 Ball ball;
 gameScreens screens;
 
+int score = 0;
+int highScore = 0;
 void setup() 
 {
   paddle = new Paddle();
@@ -38,7 +40,7 @@ void gameMain()
   text("High score", 300, 20);
   text(highScore, 344, 45);
   text("Lifes", 15, 20);
-  text(lifes, 30, 45);
+  text(ball.lifes, 30, 45);
   paddle.offSet();
   paddle.collision();
   paddle.randomness();

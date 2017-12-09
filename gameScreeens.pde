@@ -7,7 +7,7 @@ class gameScreens
     if (deathScreens == 2) 
     {
       background(255, 0, 0);
-      score = 0;
+      
       textSize(60);
       text("Game Over", 80, 250);
       textSize(20);
@@ -26,7 +26,7 @@ class gameScreens
   {
     if (menu == 1) 
     {
-      lifes = 5;
+      ball.lifes = 5;
       background(0);
       textSize(40);
       text("Press R to begin", 90, 250);
