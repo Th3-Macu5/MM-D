@@ -14,8 +14,8 @@ class Ball
       {
         highScore = score;
       }
-      deathScreen = 2;
-      menu = 3;
+      screens.deathScreens = 2;
+      screens.menu = 3;
     }
   }
 

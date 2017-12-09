@@ -1,8 +1,7 @@
 
 float randomness = 0;
 
-int menu = 1;
-int deathScreen = 1;
+
 float enemyChance;
 
 int lifes;

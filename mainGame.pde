@@ -1,10 +1,12 @@
 Paddle paddle;
 Ball ball;
+gameScreens screens;
 
 void setup() 
 {
   paddle = new Paddle();
   ball = new Ball();
+  screens = new gameScreens();
   size(500, 500);
   frameRate(60);
 }
@@ -12,16 +14,16 @@ void setup()
 void draw() 
 {
   enemyOneyPos = ball.y - 30;
-  menu();
-  deathScreen();
+  screens.menu();
+  screens.deathScreen();
   if (keyPressed == true) 
   { 
     if (key == 'r') 
     {
-      menu = 2;
+      screens.menu = 2;
     }
   }
-  if (menu == 2) 
+  if (screens.menu == 2) 
   {
     gameMain();
   }
