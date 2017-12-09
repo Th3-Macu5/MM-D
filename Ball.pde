@@ -1,5 +1,6 @@
 class Ball
 {
+
   int lifes;
   float enemyChance;
   float x = 225;
@@ -11,7 +12,7 @@ class Ball
   {
     if (lifes == -1) 
     {
-      if (score >= highScore);
+      if (score >= highScore) 
       {
         highScore = score;
       }
@@ -35,7 +36,7 @@ class Ball
   {
     if (x >= 500) 
     {
-     score = score + 1;
+      score = score + 1;
       x = 70;
       y = 250;
       delay(3000);
